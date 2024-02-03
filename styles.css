@@ -104,6 +104,7 @@ button {
   flex-wrap: wrap;
   color: #131212;
   gap: 10px;
+  margin-bottom: 100px;
 }
 .pricing-plan h3 {
   padding: 10px;
@@ -120,8 +121,12 @@ button {
   height: 290px;
   background: #fff;
   padding-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
 }
-
+section {
+  margin: 0 auto;
+}
 button {
   margin: 0 auto;
   width: 100px;
@@ -150,14 +155,34 @@ button {
   margin-left: 35px;
 }
 #footer-section {
-  padding: 30px;
+  padding: 20px;
+  background: #1f1e1e;
 }
 #footer-section,
 #footer-section ul {
   display: flex;
-
   justify-content: space-between;
 }
 #footer-section ul {
   gap: 20px;
+}
+
+.wrapper h2 {
+  margin-bottom: 20px;
+}
+@media (max-width: 830px) {
+  #pricing-plan-section {
+    gap: 40px;
+  }
+  .pricing-plan {
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+  }
+  button {
+    max-width: 100%;
+    width: 200px;
+    height: 45px;
+    margin-bottom: 40px;
+  }
 }

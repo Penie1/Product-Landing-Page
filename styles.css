@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,4 +10,36 @@ button {
 }
 a {
   color: inherit;
+  text-decoration: none;
+}
+/* --------- */
+body {
+  font-family: "Work Sans", sans-serif;
+  background: #131212;
+  color: #fff;
+}
+header,
+h2,
+h3 {
+  color: #d17218;
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  position: fixed;
+  width: 100%;
+  background: #131212;
+}
+#header-img {
+  max-width: 70px;
+  height: auto;
+}
+#nav-bar {
+  display: flex;
+  gap: 30px;
+}
+#cta-section {
+  padding-top: 110px;
 }

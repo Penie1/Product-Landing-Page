@@ -10,4 +10,9 @@ yearsEl.innerText = years;
 
 navbar.addEventListener("click", (e) => {
   e.preventDefault();
+
+  const navLinks = document.querySelector(e.target.getAttribute("href"));
+  const CoordOfHeaderTop = navLinks.getBoundingClientRect().top;
+  const CoordOfHeaderleft = navLinks.getBoundingClientRect().left;
+  const headerHeight = headerEl.getBoundingClientRect().height;
 });

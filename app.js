@@ -15,4 +15,10 @@ navbar.addEventListener("click", (e) => {
   const CoordOfHeaderTop = navLinks.getBoundingClientRect().top;
   const CoordOfHeaderleft = navLinks.getBoundingClientRect().left;
   const headerHeight = headerEl.getBoundingClientRect().height;
+
+  window.scrollTo({
+    top: CoordOfHeaderTop + window.scrollY - headerHeight,
+    left: CoordOfHeaderleft,
+    behavior: "smooth",
+  });
 });
